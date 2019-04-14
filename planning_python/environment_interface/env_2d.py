@@ -11,6 +11,9 @@ import numpy as np
 import math
 from time import sleep
 import matplotlib.pyplot as plt
+# print(plt.get_backend())
+# plt.switch_backend('agg')
+plt.switch_backend('TkAgg')
 import matplotlib.image as mpimage
 from scipy import ndimage
 from planning_python.utils import helpers

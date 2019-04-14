@@ -52,7 +52,7 @@ class Astar(SearchBasedPlanner):
       self.visited[curr_node] = 1
       #Check 3: Stop search if goal found
       if curr_node == self.goal_node:  
-        print "Found goal"
+        print("Found goal")
         found_goal = True
         break
       
@@ -79,7 +79,7 @@ class Astar(SearchBasedPlanner):
     if found_goal:
       path, path_cost = self.reconstruct_path(self.came_from, self.start_node, self.goal_node, self.cost_so_far)
     else:
-      print ('Found no solution, priority queue empty')
+      print('Found no solution, priority queue empty')
     plan_time = time.time() - start_t
 
     return path, path_cost, curr_expansions, plan_time, self.came_from, self.cost_so_far, self.c_obs

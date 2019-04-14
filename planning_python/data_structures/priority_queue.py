@@ -5,7 +5,7 @@ already in the queue, but keep a duplicate. Lazy deletes help in taking random a
 import copy
 import heapq
 
-REMOVED = '<removed-node>' #Placeholder for removed node
+REMOVED = (-1, -1) #Placeholder for removed node # TODO: check if this makes sense
 
 class PriorityQueue:
   def __init__(self):
